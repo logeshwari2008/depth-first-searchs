@@ -56,6 +56,7 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 
 <h3>Program:</h3>
 ```
+
 from collections import defaultdict
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -64,7 +65,6 @@ graph = defaultdict(list)
 G = nx.Graph()
 
 nodes, edges = map(int, input("Enter nodes and edges: ").split())
-
 for i in range(edges):
     u, v = input(f"Enter edge {i+1}: ").split()
     graph[u].append(v)
@@ -75,11 +75,8 @@ nx.draw(G, with_labels=True,
         node_color="lightblue",
         edge_color="red",
         node_size=2000)
-
 plt.show()
-
 print("Adjacency List:", dict(graph))
-
 def dfs(graph, start, visited, path):
     visited[start] = True
     path.append(start)
