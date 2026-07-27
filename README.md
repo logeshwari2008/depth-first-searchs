@@ -54,6 +54,51 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
  <li>If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.</li>
 </ol></B>
 
+<h3>Program:</h3>
+```
+from collections import defaultdict
+import networkx as nx
+import matplotlib.pyplot as plt
+
+graph = defaultdict(list)
+G = nx.Graph()
+
+nodes, edges = map(int, input("Enter nodes and edges: ").split())
+
+for i in range(edges):
+    u, v = input(f"Enter edge {i+1}: ").split()
+    graph[u].append(v)
+    graph[v].append(u)
+    G.add_edge(u, v)
+
+nx.draw(G, with_labels=True,
+        node_color="lightblue",
+        edge_color="red",
+        node_size=2000)
+
+plt.show()
+
+print("Adjacency List:", dict(graph))
+
+def dfs(graph, start, visited, path):
+    visited[start] = True
+    path.append(start)
+
+    for neighbour in graph[start]:
+        if not visited[neighbour]:
+            dfs(graph, neighbour, visited, path)
+
+    return path
+
+start = input("Enter start node: ")
+
+visited = defaultdict(bool)
+path = []
+
+print("DFS Traversal:")
+print(dfs(graph, start, visited, path))
+```
+
 <hr>
 <h3>Sample Input</h3>
 <hr>
