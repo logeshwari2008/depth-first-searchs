@@ -1,6 +1,6 @@
 <h1>ExpNo 2 : Implement Depth First Search Traversal of a Graph</h1> 
-<h3>Name: </h3>
-<h3>Register Number:     </h3>
+<h3>Name: LOGESHWARI N</h3>
+<h3>Register Number:212225040206     </h3>
 <H3>Aim:</H3>
 <p> To Implement Depth First Search Traversal of a Graph using Python 3.</p>
 <h3>Theory:</h3>
@@ -71,6 +71,7 @@ F H <BR>
 <h3>Sample Output</h3>
 <hr>
 ['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
+<img width="1355" height="718" alt="image" src="https://github.com/user-attachments/assets/a7bb0e9b-cf22-4387-b11c-e28ddb4cbc1a" />
 
 <hr>
 
@@ -87,6 +88,7 @@ F H <BR>
 <h3>Sample Output</h3>
 <hr>
 ['0', '1', '2', '3', '4']
+<img width="943" height="647" alt="image" src="https://github.com/user-attachments/assets/0dac2ca3-f687-4606-a131-88d962e9140a" />
 
 <hr>
 <h3>Result:</h3>
